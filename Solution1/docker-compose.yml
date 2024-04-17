@@ -1,0 +1,9 @@
+﻿services:
+  app:
+    container_name: test
+    image: testauthapplication
+    build:
+      context: .
+      dockerfile: TestAuthApplication/Dockerfile
+    ports:
+      - "8080:80"
